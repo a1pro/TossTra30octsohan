@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "826984484682",
+    "firebase_url": "https://tosstra.firebaseio.com",
+    "project_id": "tosstra",
+    "storage_bucket": "tosstra.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826984484682:android:fc32609e875eef81997bb3",
+        "android_client_info": {
+          "package_name": "com.app.tosstraApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "826984484682-sdqe9sgigigbprna393aokqmv90menj5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.tosstraApp",
+            "certificate_hash": "ee48790b56655b9f247424b3c9439b39ad5d7bbd"
+          }
+        },
+        {
+          "client_id": "826984484682-v0bo5399a372s7l6d73u5cagcud67ob2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCphi5iKXmulQraPsgs_WEuUy5NS6KpN6s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "826984484682-v0bo5399a372s7l6d73u5cagcud67ob2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "826984484682-uob9cjl6a87lm5c5pd4l6d8l9bkb806c.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Tosstra"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
