@@ -1,0 +1,1198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/back"
+            android:backgroundTint="@color/white"
+            android:layout_margin="15dp"/>
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Log Book"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="Driver's Vehicle Inspection Report"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/under_remarks"/>
+
+            <EditText
+                android:id="@+id/et_select_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:editable="false"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:backgroundTint="@color/white"
+                android:drawablePadding="20dp"
+                android:hint="Select Date"
+                android:imeOptions="actionNext"
+                android:paddingLeft="2dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/colorPrimaryDark" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:id="@+id/linear_main"
+                    android:orientation="vertical">
+                    <EditText
+                        android:id="@+id/et_company_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="15dp"
+                        android:maxLines="1"
+                        android:editable="false"
+                        android:singleLine="true"
+                        android:backgroundTint="@color/white"
+                        android:drawablePadding="20dp"
+                        android:hint="Company Name"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="2dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/colorPrimaryDark" />
+
+                    <EditText
+                        android:id="@+id/et_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="15dp"
+                        android:editable="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:backgroundTint="@color/white"
+                        android:drawablePadding="20dp"
+                        android:hint="Address"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="2dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/colorPrimaryDark" />
+                    <EditText
+                        android:id="@+id/et_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="15dp"
+                        android:maxLines="1"
+                        android:visibility="gone"
+                        android:editable="false"
+                        android:singleLine="true"
+                        android:backgroundTint="@color/white"
+                        android:drawablePadding="20dp"
+                        android:hint="Date"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="2dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="0dp"
+                        android:visibility="gone"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/colorPrimaryDark" />
+                    <EditText
+                        android:id="@+id/et_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="15dp"
+                        android:maxLines="1"
+                        android:editable="false"
+                        android:visibility="gone"
+                        android:singleLine="true"
+                        android:backgroundTint="@color/white"
+                        android:drawablePadding="20dp"
+                        android:hint="Time"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="2dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:visibility="gone"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/colorPrimaryDark" />
+                    <EditText
+                        android:id="@+id/et_truck_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="15dp"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:editable="false"
+                        android:backgroundTint="@color/white"
+                        android:drawablePadding="20dp"
+                        android:hint="Truck Number"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="2dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/colorPrimaryDark" />
+                    <EditText
+                        android:id="@+id/et_odometer_reading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="15dp"
+                        android:maxLines="1"
+                        android:editable="false"
+                        android:singleLine="true"
+                        android:backgroundTint="@color/white"
+                        android:drawablePadding="20dp"
+                        android:hint="Odometer Reading"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="2dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/colorPrimaryDark" />
+
+
+                    <LinearLayout
+                        android:weightSum="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/chk_air_compressor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:enabled="false"
+                                android:layout_marginTop="15dp"
+                                android:text="Air Compressor"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_suspention_system"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:layout_marginTop="15dp"
+                                android:padding="5dp"
+                                android:enabled="false"
+                                android:text="Suspension System"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_lights"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:text="Lights"
+                                android:enabled="false"
+                                android:layout_marginTop="15dp"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_battery"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:layout_marginTop="15dp"
+                                android:padding="5dp"
+                                android:enabled="false"
+                                android:text="Battery"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_brake"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:enabled="false"
+                                android:layout_marginTop="15dp"
+                                android:text="Brake Accessories"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_transmission"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:layout_marginTop="15dp"
+                                android:enabled="false"
+                                android:padding="5dp"
+                                android:text="Transmission"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_muffer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:layout_marginTop="15dp"
+                                android:padding="5dp"
+                                android:enabled="false"
+                                android:text="Muffer"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_defroster"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:layout_marginTop="15dp"
+                                android:padding="5dp"
+                                android:text="Defroster"
+                                android:enabled="false"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_windows"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:layout_marginTop="15dp"
+                                android:enabled="false"
+                                android:text="Windows"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_on_board_recorder"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:layout_marginTop="15dp"
+                                android:padding="5dp"
+                                android:enabled="false"
+                                android:text="On-Board Recorder"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_engine"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:text="Engine"
+                                android:enabled="false"
+                                android:layout_marginTop="15dp"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_fifth_wheel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:enabled="false"
+                                android:layout_marginTop="15dp"
+                                android:text="Fifth Wheel"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_front_axle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:layout_marginTop="15dp"
+                                android:drawablePadding="20dp"
+                                android:enabled="false"
+                                android:padding="5dp"
+                                android:text="Front Axle"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_fuel_tanks"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:layout_marginTop="15dp"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:enabled="false"
+                                android:text="Fuel Tanks"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_body"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:layout_marginTop="15dp"
+                                android:padding="5dp"
+                                android:enabled="false"
+                                android:text="Body"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_brakes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:enabled="false"
+                                android:padding="5dp"
+                                android:text="Brakes Parking"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_coupling_device"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:layout_marginTop="15dp"
+                                android:padding="5dp"
+                                android:enabled="false"
+                                android:text="Coupling Devices"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_fluid_level"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:layout_marginTop="15dp"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:enabled="false"
+                                android:text="Fluid level"
+                                android:textSize="16sp" />
+                            <CheckBox
+                                android:id="@+id/chk_tires"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:layout_marginTop="15dp"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:enabled="false"
+                                android:text="Tires"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_heater"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:enabled="false"
+                                android:layout_marginTop="15dp"
+                                android:text="Heater"
+                                android:textSize="16sp" />
+
+
+
+
+                            <!--<CheckBox
+                                android:id="@+id/chk_doors"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:text="Doors"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_others"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:text="Other"
+                                android:textSize="16sp" />
+                    -->
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <CheckBox
+                                android:id="@+id/chk_horn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:layout_marginTop="15dp"
+                                android:padding="5dp"
+                                android:enabled="false"
+                                android:text="Horn"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_Air_lines"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:layout_marginTop="15dp"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:enabled="false"
+                                android:text="Air Lines"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_starter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:layout_marginTop="15dp"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:text="Starter"
+                                android:enabled="false"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_steering"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:layout_marginTop="15dp"
+                                android:enabled="false"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:text="Steering"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_mirrors"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:layout_marginTop="15dp"
+                                android:enabled="false"
+                                android:padding="5dp"
+                                android:text="Mirrors"
+                                android:textSize="16sp" />
+                            <CheckBox
+                                android:id="@+id/chk_clutch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:layout_marginTop="15dp"
+                                android:drawablePadding="20dp"
+                                android:enabled="false"
+                                android:padding="5dp"
+                                android:text="Clutch"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_wheels"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:layout_marginTop="15dp"
+                                android:drawablePadding="20dp"
+                                android:enabled="false"
+                                android:padding="5dp"
+                                android:text="Wheels"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_oil_pressure"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:button="@drawable/custom_checkbox"
+                                android:enabled="false"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:text="Oil Pressure"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_drive_line"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:enabled="false"
+                                android:layout_marginTop="15dp"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:text="Drive Line"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_windshield"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:enabled="false"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:text="Windshield Wipers"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_radiator"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:enabled="false"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:text="Radiator"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_rear_end"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:layout_marginTop="15dp"
+                                android:drawablePadding="20dp"
+                                android:enabled="false"
+                                android:padding="5dp"
+                                android:text="Rear End"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_refectors"
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:enabled="false"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:text="Refectors"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_safey_equipments"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:layout_marginTop="15dp"
+                                android:drawablePadding="20dp"
+                                android:enabled="false"
+                                android:padding="5dp"
+                                android:text="Safety Equipment"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_beltsnHoses"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:layout_marginTop="15dp"
+                                android:enabled="false"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:text="Belts &amp; hoses"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_brakesnServices"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:layout_marginTop="15dp"
+                                android:enabled="false"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:text="Brakes Service"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_exhaust"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:layout_marginTop="15dp"
+                                android:enabled="false"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:text="Exhaust"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_frame"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:layout_marginTop="15dp"
+                                android:enabled="false"
+                                android:padding="5dp"
+                                android:text="Frame &amp; assembly"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_tachograph"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:layout_marginTop="15dp"
+                                android:drawablePadding="20dp"
+                                android:enabled="false"
+                                android:padding="5dp"
+                                android:text="Tachograph"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_other"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:layout_marginTop="15dp"
+                                android:drawablePadding="20dp"
+                                android:enabled="false"
+                                android:padding="5dp"
+                                android:text="Other"
+                                android:textSize="16sp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <EditText
+                        android:id="@+id/et_trailor_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="15dp"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:editable="false"
+                        android:backgroundTint="@color/white"
+                        android:drawablePadding="20dp"
+                        android:hint="Trailer(s) No.(s)"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="2dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/colorPrimaryDark" />
+
+
+                    <LinearLayout
+                        android:weightSum="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <CheckBox
+                                android:id="@+id/chk_brake_connections"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:enabled="false"
+                                android:layout_marginTop="15dp"
+                                android:text="Brake Connections"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_suspention_system1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:enabled="false"
+                                android:layout_marginTop="15dp"
+                                android:text="Suspension System"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_landing_gear"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:layout_marginTop="15dp"
+                                android:enabled="false"
+                                android:text="Landing Gear"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_coupling_devices"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:layout_marginTop="15dp"
+                                android:enabled="false"
+                                android:text="Coupling Devices"
+                                android:textSize="16sp" />
+                            <CheckBox
+                                android:id="@+id/chk_tires1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:enabled="false"
+                                android:layout_marginTop="15dp"
+                                android:text="Tires"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_reflector"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:enabled="false"
+                                android:layout_marginTop="15dp"
+                                android:text="Reflectors/Reflective Tape"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_doors"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:layout_marginTop="15dp"
+                                android:enabled="false"
+                                android:text="Doors"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_others"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:enabled="false"
+                                android:layout_marginTop="15dp"
+                                android:text="Other"
+                                android:textSize="16sp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/chk_hitch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:enabled="false"
+                                android:layout_marginTop="15dp"
+                                android:text="Hitch"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_brakes1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:enabled="false"
+                                android:padding="5dp"
+                                android:text="Brakes"
+                                android:layout_marginTop="15dp"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_tarpaulin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:enabled="false"
+                                android:layout_marginTop="15dp"
+                                android:text="Tarpaulin"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_lightsall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:enabled="false"
+                                android:layout_marginTop="15dp"
+                                android:text="Lights - All"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_coupling"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:layout_marginTop="15dp"
+                                android:enabled="false"
+                                android:padding="5dp"
+                                android:text="Coupling (King) Pin"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_wheelsnrims"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:enabled="false"
+                                android:layout_marginTop="15dp"
+                                android:text="Wheels and Rims"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chk_roof"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox"
+                                android:drawablePadding="20dp"
+                                android:padding="5dp"
+                                android:enabled="false"
+                                android:layout_marginTop="15dp"
+                                android:text="Roof"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                    <EditText
+                        android:id="@+id/et_remarks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:editable="false"
+                        android:hint="Remarks"
+                        android:textColorHint="@color/black"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="100dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/rect_stroke_blk"
+                        android:maxLines="7" />
+
+                    <CheckBox
+                        android:id="@+id/chk_condiotn_satif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/custom_checkbox"
+                        android:drawablePadding="20dp"
+                        android:padding="5dp"
+                        android:layout_marginTop="15dp"
+                        android:enabled="false"
+                        android:layout_marginLeft="20dp"
+                        android:text="Condition of the above vehicle is satisfactory"
+                        android:textSize="16sp" />
+                    <EditText
+                        android:id="@+id/et_driver_signature"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="15dp"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:editable="false"
+                        android:backgroundTint="@color/white"
+                        android:drawablePadding="20dp"
+                        android:hint="Driver's Signature"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="2dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/colorPrimaryDark" />
+
+
+                    <CheckBox
+                        android:id="@+id/chk_defect_corrected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/custom_checkbox"
+                        android:drawablePadding="20dp"
+                        android:layout_marginTop="15dp"
+                        android:enabled="false"
+                        android:padding="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="Above Defects Corrected."
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/chk_safe_operation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/custom_checkbox"
+                        android:drawablePadding="20dp"
+                        android:padding="5dp"
+                        android:layout_marginTop="15dp"
+                        android:enabled="false"
+                        android:layout_marginLeft="20dp"
+                        android:text="Above Defects Need NOT Be Corrected For Safe Operation Of Vehicle.."
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_mech_signature"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="15dp"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:backgroundTint="@color/white"
+                        android:editable="false"
+                        android:drawablePadding="20dp"
+                        android:hint="Mechanic's Signature"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="2dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/colorPrimaryDark" />
+
+                    <EditText
+                        android:id="@+id/et_mec_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="15dp"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:backgroundTint="@color/white"
+                        android:editable="false"
+                        android:drawablePadding="20dp"
+                        android:hint="Date"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="2dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/colorPrimaryDark" />
+
+                    <EditText
+                        android:id="@+id/et_drivers_signature"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:editable="false"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="15dp"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:backgroundTint="@color/white"
+                        android:drawablePadding="20dp"
+                        android:hint="Driver's Signature"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="2dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/colorPrimaryDark" />
+
+                    <EditText
+                        android:id="@+id/et_driver_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:editable="false"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="15dp"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:backgroundTint="@color/white"
+                        android:drawablePadding="20dp"
+                        android:hint="Date"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="2dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/colorPrimaryDark" />
+                    <Button
+                        android:id="@+id/bt_submit"
+                        android:layout_width="200dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:visibility="invisible"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/rounded_blue_solid"
+                        android:text="Save"
+                        android:layout_marginBottom="25dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
+
+
+
+
+
